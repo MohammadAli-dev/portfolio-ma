@@ -36,4 +36,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Active Navigation Highlight
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const pageSections = document.querySelectorAll('section[id]');
+    
+    const navObserverOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+    };
+
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Remove active from all
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Add active to current
+                const activeLink = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+    }, navObserverOptions);
+
+    pageSections.forEach(section => {
+        navObserver.observe(section);
+    });
 });
