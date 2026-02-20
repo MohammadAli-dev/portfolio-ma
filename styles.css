@@ -401,12 +401,12 @@ footer { border-top: 1px solid var(--border-color); padding: 3rem 0; text-align:
     
     /* Layout adjustments for print */
     .container { max-width: 100%; padding: 0; margin: 0; }
-    .section { padding: 1.5rem 0; page-break-inside: avoid; }
-    .hero-section { min-height: auto; padding-top: 0; page-break-after: avoid; }
+    .section { padding: 1.5rem 0; break-inside: avoid; page-break-inside: avoid; }
+    .hero-section { min-height: auto; padding-top: 0; break-after: avoid; page-break-after: avoid; }
     .hero-title { font-size: 24pt; color: black; }
     .section-header { margin-bottom: 1rem; }
     .timeline, .projects-grid, .skills-grid { display: block; }
-    .project-card, .timeline-item { page-break-inside: avoid; border: none; padding: 0.5rem 0; box-shadow: none; margin-bottom: 1rem;}
+    .project-card, .timeline-item { break-inside: avoid; page-break-inside: avoid; border: none; padding: 0.5rem 0; box-shadow: none; margin-bottom: 1rem;}
     .timeline::before { background: #cbd5e1; }
     .timeline-marker { background: white; border-color: #94a3b8;}
     .badge-metric { border: none; padding: 0; font-weight: normal; color: black; }
@@ -414,5 +414,5 @@ footer { border-top: 1px solid var(--border-color); padding: 3rem 0; text-align:
     .skill-pill::after { content: ", "; }
     .skill-pill:last-child::after { content: ""; }
     
-    h1, h2, h3, h4 { color: black; page-break-after: avoid; }
+    h1, h2, h3, h4 { color: black; break-after: avoid; page-break-after: avoid; }
 }
