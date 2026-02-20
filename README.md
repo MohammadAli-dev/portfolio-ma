@@ -27,7 +27,7 @@ The website is themed as a technical blueprint. It prioritizes data, metrics, an
 
 ### 4. Technical Excellence
 - **Zero Dependencies**: Built with pure HTML5, CSS3, and ES6 JavaScript. No heavy frameworks or large bundles.
-- **Performance Budget**: Targetting Lighthouse scores of ≥ 95 for Performance and SEO.
+- **Performance Budget**: Targeting Lighthouse scores of ≥ 95 for Performance and SEO.
 - **Accessibility**: Semantic HTML5 landmarks, ARIA roles, and high-contrast `:focus-visible` outlines for keyboard navigation.
 
 ## 🛠️ Tech Stack
