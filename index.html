@@ -249,7 +249,40 @@
             </div>
             
             <div class="projects-grid">
-                <!-- Case Study 1 -->
+                <!-- Case Study 1: Clashle -->
+                <div class="project-card project-card--side">
+                    <div class="project-header">
+                        <div class="project-title-row">
+                            <h3 class="project-title mono-text">Clashle</h3>
+                            <a href="https://www.clashle.fun" target="_blank" rel="noopener" class="project-live-link mono-text" aria-label="Visit Clashle live site">
+                                <svg class="icon" aria-hidden="true"><use href="#icon-external-link"></use></svg>
+                                clashle.fun
+                            </a>
+                        </div>
+                        <p class="project-desc mono-text">Daily Word Puzzle &mdash; Side Project</p>
+                    </div>
+
+                    <div class="project-detail">
+                        <h4>What It Is</h4>
+                        <p>A daily word-guessing game where players have six attempts to identify a hidden word. A new puzzle is served each day, with a global share mechanic and a Progressive Web App (PWA) install flow for a native-feel mobile experience.</p>
+
+                        <h4>What I Built</h4>
+                        <p>Designed and shipped the entire product solo — from game logic and daily word scheduling, to a custom challenge system that lets players send a specific word puzzle to a friend via a shareable link. Built with <strong>Next.js (App Router)</strong> and deployed on Vercel.</p>
+
+                        <h4>Engineering Highlights</h4>
+                        <p>Implemented deterministic daily word selection, share-result encoding, and a challenge-link system with per-puzzle state isolation. Built a full PWA install UX with platform-aware prompts and a post-puzzle call-to-action to boost installs. Integrated analytics for tracking engagement and retention metrics.</p>
+
+                        <h4>Traction &amp; Impact</h4>
+                        <p>Reached <span class="badge-inline">100+ daily active users</span> organically. Serves a new word every day with zero downtime via edge deployment.</p>
+
+                        <div class="retrospective">
+                            <strong class="mono-text accent-text">What this project shows:</strong>
+                            <p>End-to-end product ownership outside of a team setting — I designed, built, deployed, and iterated on something real users visit every day.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title mono-text">Multi-Tenant B2B Rewards Platform</h3>
@@ -276,7 +309,7 @@
                     </div>
                 </div>
 
-                <!-- Case Study 2 -->
+                <!-- Case Study 3 -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3 class="project-title mono-text">Automated Mortgage Workflow Pipeline</h3>
@@ -297,7 +330,7 @@
                         <p>Reduced loan turnaround time by <span class="badge-inline">33%</span> and replaced highly manual workflows, saving <span class="badge-inline">~$350K/month</span> in operational costs.</p>
                         
                         <div class="retrospective">
-                            <strong class="mono-text accent-text">What I’d do differently today:</strong>
+                            <strong class="mono-text accent-text">What I'd do differently today:</strong>
                             <p>I would add structured logging and centralized correlated tracing (e.g., OpenTelemetry) from the start to accelerate incident analysis when a specific loan gets stuck in a complex state transition.</p>
                         </div>
                     </div>
@@ -441,6 +474,11 @@
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
                 <line x1="3" y1="18" x2="21" y2="18"></line>
+            </symbol>
+            <symbol id="icon-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
             </symbol>
         </defs>
     </svg>
