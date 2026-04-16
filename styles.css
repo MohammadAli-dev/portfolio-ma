@@ -295,6 +295,40 @@ a:focus-visible, button:focus-visible {
 .retrospective { margin-top: 2rem; padding: 1.25rem; background: var(--bg-base); border-radius: 6px; border-left: 2px dashed var(--accent); }
 .retrospective strong { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; }
 
+/* Clashle / Side Project Card */
+.projects-grid .project-card--side {
+    grid-column: 1 / -1; /* span full width as the 3rd card */
+    border-color: rgba(16, 185, 129, 0.25); /* subtle emerald tint */
+}
+.projects-grid .project-card--side:hover {
+    border-color: #10b981; /* emerald-500 */
+    box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.2);
+}
+.project-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.project-live-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: #10b981;
+    padding: 0.3rem 0.75rem;
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 20px;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+.project-live-link:hover {
+    color: #fff;
+    background: rgba(16, 185, 129, 0.15);
+    border-color: #10b981;
+}
+
 /* --- Skills --- */
 .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 .skill-category .category-title { margin-bottom: 1.5rem; font-size: 1.1rem; color: var(--text-heading); border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
